@@ -31,7 +31,7 @@ Project instructions:
 15.	Run prediction script to get result for local pod.
 16.	Configuring circleci to test project code.
 
-GitHub repo files:  git@github.com:mohamedrafaat1/devops.git
+GitHub repo files:  git@github.com:Reham-Fahmy/devops.git
 •	Dockerfile: including required info to build docker.
 •	Makefile: to install all requirement packages and create virtual environment
 •	Requirements:  include all required packages to be installed automatically.
@@ -41,4 +41,4 @@ GitHub repo files:  git@github.com:mohamedrafaat1/devops.git
 •	Config.yml: yaml configuration file that include all instructions to test this project through circleci website. 
 
 Docker Hub Repo:
-   "mohamedrafaat/sklearn-img"
+   "rehamfahmyhussien/sklearn-img"
