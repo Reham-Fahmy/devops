@@ -1,13 +1,13 @@
+(.devops) ubuntu:~/environment/devops (master) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "sklearn-img" already exists
+NAME          READY   STATUS    RESTARTS   AGE
+sklearn-img   1/1     Running   0          52s
+Unable to listen on port 8000: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8000: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8000: bind: address already in use]
+error: unable to listen on any of the requested ports: [{8000 80}]
 (.devops) ubuntu:~/environment/devops (master) $ kubectl get pods
 NAME          READY   STATUS    RESTARTS   AGE
-sklearn-img   1/1     Running   0          29m
-(.devops) ubuntu:~/environment/devops (master) $ kubectl port-forward pods/sklearn-img 8000:80
-Forwarding from 127.0.0.1:8000 -> 80
-Forwarding from [::1]:8000 -> 80
-Handling connection for 8000
-
-
-(.devops) ubuntu:~/environment/devops (master) $ ./make_prediction.sh 
+sklearn-img   1/1     Running   0          68s
+(.devops) ubuntu:~/environment/devops (master) $ ./make_prediction.sh
 Port: 8000
 {
   "prediction": [
